@@ -52,7 +52,7 @@ class wsniper_main_console(wsniper_cmd.Cmd):
     def main_quit(self, line):
         print '[***] Shutting Down WebSniper cleanly....'
         print ''
-        time.sleep(3)
+        time.sleep(2)
         return wsniper_main_console().postcmd(self,line)
 
     def main_modules(self, ignored):
@@ -75,7 +75,7 @@ class wsniper_main_console(wsniper_cmd.Cmd):
         self.prefunc = "vulnerabilityconsole_"
         return
 
-    # modules console
+    # modules specific console
 
     def modulesconsole_recon(self, ignored):
         self.prompt = "websniper>modules>recon>"
@@ -104,7 +104,13 @@ class wsniper_main_console(wsniper_cmd.Cmd):
     def modulesconsole_back(self, ignored):
         self.wsniper()
 
-    # discovery specific
+    def modulesconsole_quit(self, line):
+        print '[***] Shutting Down WebSniper cleanly....'
+        print ''
+        time.sleep(2)
+        return wsniper_main_console().postcmd(self,line)
+
+    # discovery specific console
 
     def discoveryconsole_run(self, module_name):
         data = {}
@@ -116,7 +122,7 @@ class wsniper_main_console(wsniper_cmd.Cmd):
     def discoveryconsole_back(self, ignored):
         self.main_modules("*")
 
-    # recon specific
+    # recon specific console
 
     def reconconsole_run(self, module_name):
         data = {}
@@ -128,7 +134,13 @@ class wsniper_main_console(wsniper_cmd.Cmd):
     def reconconsole_back(self, ignored):
         self.main_modules("*")
 
-    # vulnerability specific
+    def reconconsole_quit(self, line):
+        print '[***] Shutting Down WebSniper cleanly....'
+        print ''
+        time.sleep(2)
+        return wsniper_main_console().postcmd(self,line)
+
+    # vulnerability specific console
 
     def vulnerabilityconsole_run(self, module_name):
         data = {}
@@ -140,7 +152,13 @@ class wsniper_main_console(wsniper_cmd.Cmd):
     def vulnerabilityconsole_back(self, ignored):
         self.main_modules("*")
 
-    # exploits specific
+    def vulnerabilityconsole_quit(self, line):
+        print '[***] Shutting Down WebSniper cleanly....'
+        print ''
+        time.sleep(2)
+        return wsniper_main_console().postcmd(self,line)
+
+    # exploits specific console
 
     def exploitsconsole_run(self, module_name):
         data = {}
@@ -151,6 +169,13 @@ class wsniper_main_console(wsniper_cmd.Cmd):
 
     def exploitsconsole_back(self, ignored):
         self.main_modules("*")
+
+    def exploitsconsole_quit(self, line):
+        print '[***] Shutting Down WebSniper cleanly....'
+        print ''
+        time.sleep(2)
+        return wsniper_main_console().postcmd(self,line)
+
 
 if __name__ == '__main__':
     wsniper_main_console().cmdloop()
