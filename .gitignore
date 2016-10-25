@@ -1,1 +1,10 @@
-*.pyc
+# Ignore any .pyc files
+core/*.pyc
+helper/*.pyc
+modules/*.pyc
+modules/discover/*.pyc
+modules/exploits/*.pyc
+modules/recon/*.pyc
+modules/vulnerability/*.pyc
+unittest/*.pyc
+unittest/vulnerability/*.pyc
