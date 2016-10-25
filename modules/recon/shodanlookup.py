@@ -5,7 +5,7 @@
 import shodan, time, sys
 
 class shodanlookup:
-    
+
     def __init__(self, core):
         pass
 
@@ -17,7 +17,7 @@ class shodanlookup:
             api = shodan.Shodan(SHODAN_API_KEY)
             host = api.host(raw_input("Set RHOST IP: "))
             print ''
-            print "[****] Starting Shodan IP search......"
+            print "[*] Starting Shodan IP search......"
             print ''
             time.sleep (3)
             print "[+] ISP: {}".format(host.get('isp', 'n/a'))
