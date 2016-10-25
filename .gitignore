@@ -2,9 +2,20 @@
 core/*.pyc
 helper/*.pyc
 modules/*.pyc
-modules/discover/*.pyc
+modules/discovery/*.pyc
 modules/exploits/*.pyc
 modules/recon/*.pyc
 modules/vulnerability/*.pyc
 unittest/*.pyc
 unittest/vulnerability/*.pyc
+
+# MacOS users
+.DS_Store
+core/.DS_Store
+modules/.DS_Store
+modules/discovery/.DS_Store
+modules/exploits/.DS_Store
+modules/recon/.DS_Store
+modules/vulnerability/.DS_Store
+unittest/.DS_Store
+unittest/vulnerability/.DS_Store
