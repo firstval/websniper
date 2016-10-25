@@ -28,11 +28,10 @@ class consoleprint:
         print ''
         print('******************************************')
         print "Available commands:"
-        print "back, credits, help, show, quit\n"
-        print "To execute a specific module or exploit: do <module_category> then run <module_name> "
-        print "e.g. websniper>modules <enter> recon <enter> run httpheaderanalyzer"
+        print "help, show, back, credits, quit\n"
+        print "To run specific module or exploit do: websniper>modules <enter> recon <enter> run httpheaderanalyzer"
         print ""
         return
 
     def credits(self):
-        print "Credits to ROOTCON"
+        print "Credits to ROOTCON Labs"
