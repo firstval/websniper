@@ -43,11 +43,11 @@ Run bootstrap.py to see all necessary python dependencies in order for WebSniper
 
 How to contribute?
 -------------------
-1. (Clone Us) Using git - git clone git@github.com:semprix/WebSniper.git
-2. Check-out the Issues page - https://github.com/semprix/websniper/issues
+1. (Clone Us) Using git - git clone git@github.com:ROOTCONLabs/websniper.git
+2. Check-out the Issues page - https://github.com/ROOTCONLabs/websniper/issues
 3. Modify / Hack existing modules
 4. Submit new modules
-    - create your module at https://github.com/semprix/websniper/tree/master/unittest
+    - create your module at https://github.com/ROOTCONLabs/websniper/pulls
     - Send us a Pull Request
 5. Happy hacking!!!
 
@@ -63,6 +63,6 @@ Install
 Python2.7 should be present on the system
 
 1. (Install Option #1) Using git - git clone git@github.com:semprix/WebSniper.git
-2. (Install Option #2) Downloading master - download at https://github.com/semprix/websniper/archive/master.zip
+2. (Install Option #2) Downloading master - download at https://github.com/ROOTCONLabs/websniper/archive/master.zip
 3. Run bootstrap.py - this will check all python module dependencies
 4. Run websniper.py - python websniper.py
