@@ -1,4 +1,4 @@
-# shodan_ipsearch.py
+# shodanlookup.py
 # description: looks up the host using Shodan's API
 # author: @shipcod3
 
