@@ -24,6 +24,7 @@ class showprints:
             print ' modules/recon/subdomainfinder               shipcode                 Harvest domain from the target'
             print ' modules/vulnerability/dnsmisconfig          shipcode                 Check if target is vulnerable to DNS misconfiguration'
             print ' modules/vulnerability/ghostcheck            semprix                  Wordpress is vulnerable to Ghost Vulnerability, this module will check if RPC is enabled.'
+            print ' modules/vulnerability/httpsysrce            shipcode                 Check for HTTP.sys Remote Code Execution Vulnerability'
             print ' modules/vulnerability/sapServletrce         shipcode                 Check for SAP ConfigServlet Remote Unauthenticated Remote Code Execution Vulnerability'
             print ""
 
@@ -66,5 +67,6 @@ class showprints:
             print ' modules/recon/subdomainfinder               shipcode                 Harvest domain from the target'
             print ' modules/vulnerability/dnsmisconfig          shipcode                 Check if target is vulnerable to DNS misconfiguration'
             print ' modules/vulnerability/ghostcheck            semprix                  Wordpress is vulnerable to Ghost Vulnerability, this module will check if RPC is enabled.'
+            print ' modules/vulnerability/httpsysrce            shipcode                 Check for HTTP.sys Remote Code Execution Vulnerability'
             print ' modules/vulnerability/sapServletrce         shipcode                 Check for SAP ConfigServlet Remote Unauthenticated Remote Code Execution Vulnerability'
             print ""
